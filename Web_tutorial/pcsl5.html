@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>CSS Made Easy A Crash Course In Cascading Sheet Styles for Beginners</title>
+
+<link rel="stylesheet" href="pcs1.css" type="text/css" />
+
+</head>
+
+<body>
+
+<div id="container">
+<h1>CSS MADE EASY <span class="subh">
+Web Design for Beginners</span></h1>
+
+<div id="topmenu">
+
+<ul class="navtab">
+<li class="navtab"><a href="pht1.html" class="topbar">HTML Tutorial</a></li>
+<li id="tab">CSS Tutorial</li> 
+<li class="navtab"><a href="ptem1.html" class="topbar">Web Templates</a></li>
+<li class="navtab"><a href="pcon1.html" class="topbar">Contact</a></li>
+</ul>
+
+</div>
+
+<div id="graybar">
+<a href="images/ht6.jpg" target="-blank">
+<img src="images/ht6.jpg" alt="dog portraits" title="pet portraits" border="0"></a>
+</div>
+
+<div id="sidebar">
+<div class="sidetitle">CSS MADE EASY</div>
+<p class="sidelink">
+<a href="pcs1.html" class="sidenav">Introduction To CSS</a>
+<a href="pcsl1.html" class="sidenav">Lesson1: External Style Sheet</a>
+<a href="pcsl2.html" class="sidenav">Lesson2: CSS Mouseover</a>
+<a href="pcsl3.html" class="sidenav">Lesson3: Classes</a>
+<a href="pcsl4.html" class="sidenav">Lesson4: Selectors</a>
+<a href="pcsl5.html" class="sidenav">Lesson5: Properties</a>
+</p>
+
+<div class="sidetitle">HTML EXTRAS</div>
+<p class="sidelink">
+<a href="colorcodes.html" class="sidenav">Color Chart</a>
+<a href="graphics.html" class="sidenav">Web Graphics</a>
+</p>
+
+</div>
+
+<div id="content">
+
+<h2 class="text">Lesson 5<br />CSS properties</h2>
+
+Properties are CSS commands, together with their values they tell selectors how HTML tags are to display stuff on webpages such as making text red:
+
+<p class="code">
+<strong>h2 {color:red;}</strong>
+</p>
+
+<p>
+There can be an unlimited amount of properties added to a selector and they can be listed in any order as long as they are contained between the curly brackets and each property is separated with semi-colon at the end of its value:
+</p>
+
+<pre class="textcode">
+h3 {
+  color:red;
+  font-family:arial;
+  letter-spacing:10px;
+}</pre>
+
+<p>
+In the above example all <strong>h3</strong> tags will have red arial text with letters that are spaced 10 pixels apart:
+</p>
+
+<h3 style="font-family:arial; color:red; letter-spacing:10px;">red arial text</h3>
+
+<p>
+Some properties can have more than one value:
+</p>
+
+<p class="code">
+h3 {border:1px solid green;}
+</p>
+
+<p>The three values listed will detemine the border's thickness, it's style and it's color.
+Notice that each value is separated by a space and the semi colon comes at the end of the last value listed. Result:
+
+<h3 style="border: 1px solid green;">Example</h3>
+
+<p>
+Some properties including the border property have a top, right, bottom and left counterpart property, for example:
+</p>
+
+<pre class="textcode">
+h3 {border:1px solid green;
+    <span class="highlight">padding-left:20px;
+    </span>}
+</pre>
+
+<p >Result:</p>
+</p>
+
+<h3 style="border: 1px solid green; padding-left:20px;">Example</h3>
+
+<p>
+ With properties it's possible to do things HTML alone can't such as using the background property to change the background  on the webpage:
+</p>
+
+<p class="code">
+body {background:silver;}
+</p>
+
+<p>
+As well as using the background property to highlight a word:
+</p>
+
+<p class="code">
+.highlight {background:yellow;}
+</p>
+
+<p>
+Add <strong>class="hightlight"</strong> to a <strong>span</strong> tag like this:
+</p>
+
+<p>Guess which
+<strong>
+&lt;span <span class="highlight">class="highlight"</span>&gt;</strong>>word<strong>&lt;/span&gt;</strong> will be affected 
+</p>
+
+<p>
+Result:
+</p>
+Guess which
+<span style="background:yellow;"> word</span> will be affected 
+
+<p>
+Pretty cool this CSS stuff, isn't it? There are many properties that will let you redefine just about every aspect of a webpage including designing a site's layout. 
+</p>
+
+</div>
+
+</div>
+</body>
+
+</html>

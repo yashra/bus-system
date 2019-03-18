@@ -1,0 +1,132 @@
+
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+
+<title>Beginners Html Web Design Tutorials For Making Webpages</title>
+
+<link rel="stylesheet" href="pcs1.css" type="text/css" />
+
+</head>
+
+<body style="background:#ffffff;">
+
+<div id="container" style="border:none; padding-top:3px;">
+<div id="sidebar">
+<div class="sidetitle">HTML TUTORIAL</div>
+<p class="sidelink">
+<a href="pht1.html" class="sidenav" target="_top">Introduction</a>
+<a href="lesson1.html" class="sidenav" target="_top">Lesson1: Tags</a>
+<a href="lesson2.html" class="sidenav" target="_top">Lesson2: Block Tags</a>
+<a href="lesson3.html" class="sidenav" target="_top">Lesson3: Inline Tags</a>
+<a href="lesson4.html" class="sidenav" target="_top">Lesson4: Attributes</a>
+<a href="lesson5.html" class="sidenav" target="_top">Lesson5: Graphics</a>
+<a href="lesson6.html" class="sidenav" target="_top">Lesson6: Links</a>
+<a href="lesson7.html" class="sidenav" target="_top">Lesson7: Lists</a>
+<a href="lesson8.html" class="sidenav" target="_top">Lesson8: Tables</a>
+<a href="frames.html" class="sidenav" target="_top">Lesson9: Frames</a>
+</p>
+
+<div class="sidetitle">HTML EXTRAS</div>
+
+<p class="sidelink">
+<a href="colorcodes.html" class="sidenav" target="_top">Color Chart</a>
+<a href="graphics.html" class="sidenav" target="_top">Web Graphics</a>
+</p>
+
+</div>
+
+<div id="content">
+
+<h2 class="text">Lesson 9: Frames</h2>
+
+<div class="subheading">Do You Really Want Them?</div>
+Scroll down the page, see what happened? The top part of the page remained stationary while the rest of the
+page moved. That's what's called frames. A webpage with frames may look interesting but it can pose problems, not all browsers support frames, some search engines ignore web pages with frames, and HTML 5, the newest version of HTML code that's in the works, won’t support frame tags. But if you still want to know how they are made read on. 
+
+<p>
+<strong class="subheading">More Than One Page</strong><br />
+A web page with frames is actually made up of several pages put together into one. This page for example is made of three pages:
+One for the top, another for the main section, and a third one which brings them together.
+</p> 
+
+<p>
+You can see that this page has two frames,
+the top frame containing  the page with the title, and the bottom frame containing the page with the
+sidebar and main content. Webpages within the frames are written just like any other html file but the page which brings
+them together has it's own set of html tags. Here's how the code looks for this page:
+</p>
+
+<p>
+<strong>
+&LT;html&gt;</strong></p>
+
+<strong>
+&lt;head&gt;<br />
+&lt;title&gt;frames&lt;/title&gt;<br />
+&lt;head&gt;<br /><br />
+&lt;frameset rows="30%,70%"&gt;<br />
+&lt;frame src="title.html"&gt;<br />
+&lt;frame src="main.html"&gt;<br />
+&lt;/frameset&gt;<br /><br />
+&lt;/html&gt;
+</strong>
+
+<p>
+Notice that the html file starts out just like any other web page except 
+there are no <strong>body</strong> tags. In their place are the opening and closing
+<strong>frameset</strong> tags.
+</p>
+
+<p>
+The <strong>rows</strong> attribute in the <strong>frameset</strong> tag makes horizontal frames, vertical frames are made with the <strong>cols</strong> attribute. The numbers determine how much of the web page the frames will take up, in the example the top frame takes 30% and the second frame 70% of space. The percentages need to be distributed so that they add up to 100% and notice they are enclosed in quotation marks. Each percentage is separated by a comma.
+</p>
+
+<p>
+Next come the <strong>frame</strong> tags, they are single tags so have no closing tag. The <strong>src</strong> attribute is telling the browser which web page is to display in the frame by default (when the visitor arrives on the web page). In the example the first frame holds a web page with the file name <strong>"title.html"</strong> and the second frame holds a web page named <strong>"main.html"</strong>. 
+</p>
+
+<p>
+ More frames can be put on a web page by adding more <strong>frame</strong> tags to the code. To remove frame borders add the <strong>border="0"</strong> attribute into the opening <strong>frameset</strong> tag like so:
+</p>
+
+<p style="text-align:center;">
+<strong>&lt;frameset rows="30%,70%" frameborder="0"&gt;</strong>
+</p>
+
+
+<p><strong>Linking From Framed Web Pages</strong><br />
+To get links working properly on framed web pages, each frame needs to be named so that the anchor tags will know into which frame to send the destination web page when a link is clicked. This is done by putting the  <strong>name</strong> attribute into the <strong>frame</strong> tags like so:
+</p>
+
+<div class="pagespace" style="text-align:center; font-weight:bold;">
+&lt;frame src="main.html" name="myframe"&gt;
+</div>
+
+
+<p>
+The name of the frame can be anything, once the frame is named, the link is directed to it through the <strong>target</strong> attribute in the anchor tags:
+</p>
+
+<div style="text-align:center;"><strong>
+&lt;a href="testage.html" target="myframe"><span style="font-weight:normal;">Your link</span>&lt;/a&gt;</strong>
+</div>
+
+<p>
+The <strong>target</strong> attribute told the link to send the web page into a frame named <strong>myframe</strong>. The <strong>target</strong> attribute can also force links to break out of frames completely and load like a regular web page when its value is set to <strong>"_top"</strong> like so:
+</p>
+
+<div style="text-align:Center;"><strong>
+&lt;a href="testage.html" target="_top"&gt;<span style="font-weight:normal;">Your link</span>&lt;/a&gt;</strong>
+</div>
+
+<p>
+And that's how a web page with frames is made. So do you still want them?
+</p>
+</div>
+</div>
+</body>
+
+</html>

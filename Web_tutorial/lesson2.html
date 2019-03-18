@@ -1,0 +1,151 @@
+
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+
+<title>HTML Block Tags - Beginner Web Design Tutorials</title>
+
+<link rel="stylesheet" href="pcs1.css" type="text/css" />
+
+</head>
+
+<body>
+
+<div id="container">
+<h1>HTML MADE EASY <span class="subh">
+Web Design for Beginners</span></h1>
+
+<div id="topmenu">
+<ul class="navtab">
+<li id="tab">HTML Tutorial</li>
+<li class="navtab"><a href="pcs1.html" class="topbar">CSS Tutorial</a></li> 
+<li class="navtab"><a href="ptem1.html" target="_blank" class="topbar">Web Templates</a></li>
+<li class="navtab"><a href="pcon1.html" class="topbar">Contact</a></li>
+</ul>
+</div>
+
+<div id="graybar">
+<a href="images/ht6.jpg" target="_blank">
+<img src="images/ht6.jpg" width="720" height="90" alt="digital dog portraits" border="0" /></a>
+</div>
+
+<br />
+
+<div id="sidebar" style="clear:both;">
+<div class="sidetitle">HTML TUTORIAL</div>
+<p class="sidelink">
+<a href="pht1.html" class="sidenav">Introduction</a>
+<a href="lesson1.html" class="sidenav">Lesson1: Tags</a>
+<a href="lesson2.html" class="sidenav">Lesson2: Block Tags</a>
+<a href="lesson3.html" class="sidenav">Lesson3: Inline Tags</a>
+<a href="lesson4.html" class="sidenav">Lesson4: Attributes</a>
+<a href="lesson5.html" class="sidenav">Lesson5: Graphics</a>
+<a href="lesson6.html" class="sidenav">Lesson6: Links</a>
+<a href="lesson7.html" class="sidenav">Lesson7: Lists</a>
+<a href="lesson8.html" class="sidenav">Lesson8: Tables</a>
+<a href="frames.html" class="sidenav">Lesson9: Frames</a>
+</p>
+
+<div class="sidetitle">HTML EXTRAS</div>
+
+<p class="sidelink">
+<a href="colorcodes.html" class="sidenav">Color Chart</a>
+<a href="graphics.html" class="sidenav">Web Graphics</a>
+</p>
+
+</div>
+
+<div id="content">
+
+<h2 class="text">Lesson 2: Block Tags</h2>
+
+<div class="subheading">Making Headings</div>
+
+Let's make the web page a little more eye catching by adding a large, bold heading using the heading tags:
+
+<p class="code">&lt;h1&gt;&lt;/h1&gt;</p>
+
+<p>
+Remember from the previous lesson, things which appear on web pages are enclosed between the opening and closing <strong>body</strong> tags, that also includes other tags which affect how things are seen on web pages:
+</p>
+
+<p>
+<strong>
+&lt;body&gt;<br />
+&lt;h1&gt;<span style="font-weight:normal;">Learning HTML</span>&lt;/h1&gt;<br />
+&lt;/body&gt;
+</strong>
+</p>
+
+<p>
+The number <strong>1</strong> beside the letter <strong>h</strong> determines how large the heading will be. Any number from 1 to 6 can be used, <strong>1</strong> makes the largest heading, and <strong>6</strong> makes the smallest. 
+</p>
+
+<p>
+Heading tags belong to what are called <em>"block"</em> tags. These kind of tags dont't allow any outside text to line up beside them, you will see the effect in a moment but first let's see how our HTML file is shaping up:
+</p>
+
+<p>
+<strong>&lt;html&gt;<br /><br />
+&lt;head&gt;<br />
+&lt;title&gt;<span style="font-weight:normal;">My First Webpage</span>&lt;/title&gt;<br />
+&lt;/head&gt;<br /> <br />
+
+&lt;body&gt;<br />
+&lt;h1&gt;</strong><span style="font-weight:normal;">Learning HTML</span><strong>&lt;/h1&gt;</strong>
+Look Ma, I'm making a webpage!<br />
+<strong>
+&lt;/body&gt;<br /><br />
+&lt;/html&gt;
+</strong>
+</p>
+
+<p>
+Open your web page and this is what it should look like:
+</p>
+
+<p class="code">
+<img src="images/ht22.jpg" alt="web design">
+</p>
+
+<p>
+See how the text outside the <strong>h1</strong> tags is on a separate line? This is what block tags do, they force the stuff they don't enclose to be on a separate line. Another block tag is the paragraph tag:
+</p>
+
+<div class="code">&lt;p&gt;&lt;/p&gt;</div>
+
+<p>
+Any text put between the opening and closing <strong>p</strong> tags makes one paragraph. 
+</p>
+
+<p>
+Hitting the "Enter" key has no effect on web pages, to start a new line within a paragraph the <strong>br</strong> tag is needed:
+</p>
+
+<div class="code">&lt;br&gt;</div>
+
+<p>
+The <strong>br</strong> tag is one of the few HTML tags which does not have a corresponding closing tag. These kind of tags are called <em>"single"</em> tags.  Here is an example of how the <strong>br</strong> tag can be used in a paragraph:
+</p>
+
+<div class="code">&lt;p&gt;<span style="font-weight:normal;">Look Ma,</span>&lt;br&gt;<span style="font-weight:normal;">I'm making a webpage!</span>&lt;/p&gt;</div>
+
+<p>
+The result would look like this:
+</p>
+
+<p style="font-family:times new roman;">Look Ma,<br />I'm making a webpage!</p>
+
+<p>
+Try it out yourself in the HTML file you made and then let's move on to <a href="lesson3.html"> lesson 3</a>.
+</p>
+
+</div>
+
+</div>
+
+</body>
+
+</html>

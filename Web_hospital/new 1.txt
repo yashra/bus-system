@@ -1,0 +1,16 @@
+function demo()
+{
+if(document.myform.t1.value=="")
+{
+alert("please enter the")
+}
+</script>
+</head>
+<body>
+<form onsubmit="demo()" name="myform">
+Enter name<input type="text" name="t1"><br>
+Enter password<input type="text" name="t2"><br>
+<input type="submit">
+</form>
+</body>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>Beginner CSS Tutorial on Selectors</title>
+
+<link rel="stylesheet" href="pcs1.css" type="text/css" />
+<script src="jquery-3.2.0.js"></script>
+<script>
+$('document').ready(function(){
+$('a.example').css('color','red');
+$('a.example').css('text-decoration','none');
+$('a.example:hover').css('color','blue');
+$('a.example:hover').css('text-decoration','underline');
+});
+</script>
+
+</head>
+
+<body>
+
+<div id="container">
+<h1>CSS MADE EASY <span class="subh">
+Web Design for Beginners</span></h1>
+
+<div id="topmenu">
+
+<ul class="navtab">
+<li class="navtab"><a href="pht1.html" class="topbar">HTML Tutorial</a></li>
+<li id="tab">CSS Tutorial</li> 
+<li class="navtab"><a href="ptem1.html" class="topbar">Web Templates</a></li>
+<li class="navtab"><a href="pcon1.html" class="topbar">Contact</a></li>
+</ul>
+
+</div>
+
+<div id="graybar">
+<a target="_blank" href="images/ht5.jpg"><img src="images/ht5.jpg" alt="ComboInk" border="0" /></a>
+</div>
+
+<div id="sidebar">
+<div class="sidetitle">CSS MADE EASY</div>
+<p class="sidelink">
+<a href="pcs1.html" class="sidenav">Introduction To CSS</a>
+<a href="pcsl1.html" class="sidenav">Lesson1: External Style Sheet</a>
+<a href="pcsl2.html" class="sidenav">Lesson2: CSS Mouseover</a>
+<a href="pcsl3.html" class="sidenav">Lesson3: Classes</a>
+<a href="pcsl4.html" class="sidenav">Lesson4: Selectors</a>
+<a href="pcsl5.html" class="sidenav">Lesson5: Properties</a>
+</p>
+
+<div class="sidetitle">HTML EXTRAS</div>
+<p class="sidelink">
+<a href="colorcodes.html" class="sidenav">Color Chart</a>
+<a href="graphics.html" class="sidenav">Web Graphics</a>
+</p>
+
+</div>
+
+<div id="content">
+
+<h2 class="text">Lesson 4<br />Making Selectors</h2>
+
+In the previous lesson on <a href="pcsl2.html">mouseovers</a> you learned that selectors determine which HTML tags will be affected by CSS commands and that a selector can be the name of any HTML tag. You also learned that properties and their values tell selectors how those tags are to display stuff. For example:
+
+<p class="code">
+<strong>p {font-size:12px;}</strong>
+</p>
+
+<p>
+That bit of CSS code told all <strong>p</strong> tags to display text that is 12 pixels in height (<strong>px</strong> stands for pixels). Selectors which take on the name of an HTML tag are called <em>tag selectors</em> or sometimes referred to as <em>html selectors</em>.
+</p>
+
+<p>
+The mouseover tutorial also showed that by making classes you can control which link tags will be affected by CSS code. Classes can also be made for other HTML tags by naming a selector with a made up word:
+</p>
+
+<p class="code">
+p.mytext {font-family:courier;}
+</p>
+
+<p>
+Notice there is a dot between the selector and the made up word.
+Any <strong>p</strong> tags that contain the attribute <strong>class="mytext"</strong> will be affected by the properties in the p selector named <em>mytext</em> but if put into any other HTML tag it will have no affect at all:
+</p>
+
+<p class="code">
+&lt;p <span class="highlight">class="mytext"</span>&gt;<span style="font-weight:normal;">Text affected by code</span> &lt;/p&gt;
+</p>
+
+<p>
+However by making classes and not specifying the selector, the class can then affect any kind of HTML tag:
+
+<p class="code">
+.mytext {font-family:courier;}
+</p>
+
+<p>
+Notice there is a dot preceding the made up word but no specified selector, this is what's called a <em>class selector</em> enabling <strong>class="mytext"</strong> to work in any HTML tag it's put in:
+</p>
+
+<p><strong>
+&lt;p <span class="highlight">class="mytext"</span>&gt;<span style="font-weight:normal;">Text affected by code</span> &lt;/p&gt;<br />
+&lt;h3 <span class="highlight">class="mytext"</span>&gt;<span style="font-weight:normal;">Text affected by code too!</span> &lt;/h3&gt;
+</strong>
+
+<p>
+Another type of selector that is similar to class selectors is an <strong>id</strong> selector. These kinds of selectors has a number sign preceding the made up word instead of a dot:
+</p>
+
+<p class="code">
+#content { width:450px;}
+</p>
+
+<p>
+Now the <strong>id</strong> attribute goes into the HTML tag:
+</p>
+
+<p class="code">
+&lt;p <span class="highlight">id="content"</span>&gt;<span style="font-weight:normal;">This paragraph will be 450 pixels wide</span> &lt;/p&gt;
+</p>
+
+<p>
+You can make as many class and id selectors as you like but unlike classes in which the same class can be used in an unlimited amount of tags on the same page, each id selector should only be used once per webpage.
+</p>
+
+<p>
+Now that you know about selectors let's have a closer look at <a href="pcsl5.html">properties</a>.
+</p>
+
+</div>
+
+</div>
+</body>
+
+</html>

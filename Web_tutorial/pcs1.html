@@ -1,0 +1,93 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+
+<title>CSS Made Easy A Crash Course In Cascading Sheet Styles for Beginners</title>
+<link rel="stylesheet" href="pcs1.css" type="text/css" />
+<script src="jquery-3.2.0.js"></script>
+<script>
+$('document').ready(function(){
+$('a.example').css('color','red');
+$('a.example').css('text-decoration','none');
+$('a.example:hover').css('color','blue');
+$('a.example:hover').css('text-decoration','underline');
+});
+</script>
+</head>
+
+<body>
+
+<div id="container">
+<h1>CSS MADE EASY <span class="subh">
+Web Design for Beginners</span></h1>
+
+<div id="topmenu">
+<ul class="navtab">
+<li class="navtab"><a href="pht1.html" class="topbar">HTML Tutorial</a></li>
+<li id="tab">CSS Tutorial</li> 
+<li class="navtab"><a href="ptem1.html" class="topbar">Web Templates</a></li>
+<li class="navtab"><a href="pcon1.html" class="topbar">Contact</a></li>
+<li class="navtab"><a href="Login.html" class="topbar">Signup</a></li> 
+</ul>
+</div>
+
+<div id="graybar">
+<a href="images/ht1.jpg" target="_blank"><img src="images/ht1.jpg" alt="Baby Product image" border="0" /></a> 
+</div>
+<br />
+
+<div id="sidebar">
+<div class="sidetitle">CSS MADE EASY</div>
+<p class="sidelink">
+
+<a href="pcs1.html" class="sidenav">Introduction To CSS</a>
+<a href="pcsl1.html" class="sidenav">Lesson1: External Style Sheet</a>
+<a href="pcsl2.html" class="sidenav">Lesson2: CSS Mouseover</a>
+<a href="pcsl3.html" class="sidenav">Lesson3: Classes</a>
+<a href="pcsl4.html" class="sidenav">Lesson4: Selectors</a>
+<a href="pcsl5.html" class="sidenav">Lesson5: Properties</a>
+</p>
+
+<div class="sidetitle">HTML EXTRAS</div>
+<p class="sidelink">
+<a href="colorcodes.html" class="sidenav">Color Chart</a>
+<a href="graphics.html" class="sidenav">Web Graphics</a>
+</p>
+
+</div>
+
+<div id="content">
+
+<h2 class="text">Introduction To CSS</h2>
+
+
+<p>
+<strong class="subheading">What Is CSS?</strong><br />
+CSS is HTML's best buddy.
+While HTML is used to make a webpage, the job of CSS is to make it look nice and pretty. It does stuff like change font color, style and size. It can add color to backgrounds, and not just the background of webpages but to any element on the page such as <span style="background:yellow;">highlighting words and sentences</span>. CSS can position stuff on webpages too which makes it an indespensible tool in designing the layout of webpages.
+</p>
+
+<p>
+With CSS it's possible to do things that HTML alone cannnot such as adjust the <span style="letter-spacing:8px;"> spacing between letters</span>. CSS also does fun stuff  like mouseovers:
+</a>
+
+<p style="text-align:center;">
+<a href="pht1.html" class="example">move mouse pointer over link</a>
+</p>
+
+ Is that cool or what? But the best and most powerful aspect of CSS is that the appearance of an entire site can be changed at once from a single file called an <em>external style sheet</em>. And you know what else? CSS is real easy to learn (hey, this tutorial isn't call CSS Made <em>Easy</em> for nothing). 
+ </p>
+ 
+ <p>
+ So are you ready to learn CSS code? Okay then let's begin by seeing how to make an <a href="pcsl1.html">External Style Sheet</a>.
+</p>
+
+</div>
+
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,144 @@
+body{font-family:sans serif, arial; 
+      margin-top:0px; 
+    background:deepskyblue;
+     
+}
+
+a:link{color:#4682b4;}
+a:visited{color:#7a7d7d;}
+
+a.sidenav{color:#4682b4; 
+          text-decoration:none; 
+          display:block;
+}
+a.sidenav:hover{color:#4682b4; 
+                text-decoration:underline;
+}
+
+a.topbar:link{color: #ffffdc; 
+              text-decoration:none; 
+              padding:5px;
+}
+a.topbar:visited{color: #ffffdc; 
+                 text-decoration:none; 
+                 padding:5px;
+}
+a.topbar:hover{color:#4682b4; 
+               background:#b0c4de; 
+               padding:5px;
+}
+
+
+#container {width:800px; 
+     margin:auto;
+ overflow:auto;
+  background:#ffffff;
+  padding:20px;
+  border:1px solid #87afc7;
+
+}
+
+ul.navtab{padding:5px; 
+          margin:0px;
+}
+li.navtab{display:inline; 
+          padding:0px;
+}
+
+#tab{background:#b0c4de; 
+     color:#000000; 
+     padding:5px; 
+     display:inline;
+}
+
+h1{color:#817873; 
+   font-size:32px; 
+   font-style:italic; 
+    
+   margin:auto;
+   padding-top:30px;
+   padding-bottom:5px;
+   background:white;
+   
+}
+.subh{color:silver; 
+      font-size:14px;
+}
+
+#topmenu{color:white;
+         font-size:14px;
+         border-bottom:solid #b0c4de 8px;
+         background:#87afc7; 
+         width:800px;
+         margin:auto; 
+         text-align:center; 
+         padding:0px;
+}
+ 
+#graybar{font-size:12px; 
+         background:#ece7e6;
+         width:800px; 
+         padding-top:20px; 
+         padding-bottom:20px; 
+         margin-auto; 
+        text-align:center;
+}
+
+#asobanner{
+         font-size:16px; 
+         background:#000000;
+         margin:auto;
+         text-align:center;
+         color:#ffffff;
+         width:800px; height:90px;
+}
+
+
+#sidebar{font-size:12px;
+         border:1px solid #87afc7; 
+        width:180px;
+        padding:0px; 
+        float:left; 
+        margin-top:20px; margin-right:20px;
+}
+.sidelink{padding:8px;}
+
+#content{float:left; 
+         width:595px;
+         line-height:25px;
+}
+
+.text {font-family:arial;
+       font-size:25px; 
+       color:#a9a9a9; 
+       text-align:center; 
+       margin-bottom:40px;
+}
+
+.subheading { font-weight:bold;
+              color:#a9a9a9;
+}
+
+.code {font-weight:bold; 
+      text-align:center;
+}
+
+
+.sidecell{padding:5px;}
+
+.sidetitle{color:white; 
+           background:#87AFC7; 
+           text-align:center; 
+           width:180px; 
+           font-weight:bold;
+           padding-top:3px; 
+           padding-bottom:3px;
+}
+
+
+#tabs {width:800px;
+       height:85px; 
+       margin:auto;
+       border:0px;
+}
+

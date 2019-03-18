@@ -1,0 +1,119 @@
+
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+
+<title>Inline Tags - Beginner Web Design Tutorials</title>
+
+<link rel="stylesheet" href="pcs1.css" type="text/css" />
+
+</head>
+
+<body>
+
+<div id="container">
+<h1>HTML MADE EASY <span class="subh">
+Web Design for Beginners</span></h1>
+
+<div id="topmenu">
+<ul class="navtab">
+<li id="tab">HTML Tutorial</li>
+<li class="navtab"><a href="pcs1.html" class="topbar">CSS Tutorial</a></li> 
+<li class="navtab"><a href="ptemp1.html" class="topbar">Web Templates</a></li>
+<li class="navtab"><a href="pcon1.html" class="topbar">Contact</a></li>
+</ul>
+</div>
+
+<div id="graybar">
+<a href="images/ht2.jpg" target="_blank"><img src="images/ht2.jpg" alt="Templates Image" border="0" /></a>
+</div>
+
+<br />
+
+<div id="sidebar">
+<div class="sidetitle">HTML TUTORIAL</div>
+<p class="sidelink">
+<a href="pht1.html" class="sidenav">Introduction</a>
+<a href="lesson1.html" class="sidenav">Lesson1: Tags</a>
+<a href="lesson2.html" class="sidenav">Lesson2: Block Tags</a>
+<a href="lesson3.html" class="sidenav">Lesson3: Inline Tags</a>
+<a href="lesson4.html" class="sidenav">Lesson4: Attributes</a>
+<a href="lesson5.html" class="sidenav">Lesson5: Graphics</a>
+<a href="lesson6.html" class="sidenav">Lesson6: Links</a>
+<a href="lesson7.html" class="sidenav">Lesson7: Lists</a>
+<a href="lesson8.html" class="sidenav">Lesson8: Tables</a>
+<a href="frames.html" class="sidenav">Lesson9: Frames</a>
+</p>
+
+<div class="sidetitle">HTML EXTRAS</div>
+
+<p class="sidelink">
+<a href="colorcodes.html" class="sidenav">Color Chart</a>
+<a href="graphics.html" class="sidenav">Web Graphics</a>
+</p>
+
+
+</div>
+
+<div id="content">
+
+<h2 class="text">Lesson 3: Inline Tags</h2>
+<p>
+<strong class="subheading">Formatting Text</strong><br />
+
+Words within a sentence or paragraph can be made bold with the <strong>strong</strong> tag like so:
+</p>
+
+<p>
+<strong>&lt;p&gt;</strong><br />
+One word in this sentence will be bold <strong>&lt;strong&gt;</strong> guess<strong>&lt;/strong&gt;</strong> which one?
+<br />
+<strong>&lt;/p&gt;</strong>
+</p>
+
+<p>
+Did you pick "guess"? Then you passed the grade, give yourself a pat on the back.
+</p>
+
+<p>
+Italicized words are made by enclosing them in <strong>em</strong> tags:
+</p>
+
+<div class="code">&lt;em&gt;<span style="font-weight:normal;">Your text here</span>&lt;/em&gt;</div>
+
+<p>
+The <strong>strong</strong> and <strong>em</strong> tags belong to a group of tags known as <em>"inline"</em> tags, these kind of tags don’t force text to start on a separate line the way block tags do. They can be used together to make text both bold and italicized:
+</p>
+
+<div class="code">&lt;strong&gt;
+&lt;em&gt;<span style="font-weight:normal;">Your text here</span>&lt;/em&gt;&lt;/strong&gt;
+</div>
+
+<p>
+It doesn’t matter which tag is used first but it is important to note that when using combination of tags their corresponding closing tag should be listed in the correct order, if the order starts with the opening <strong>em</strong> tag, it should end with the closing <strong>em</strong> tag, for example:
+</p>
+
+<p>
+this is correct - <strong>&lt;em&gt;&lt;strong&gt;</strong>text here<strong>&lt;/strong&gt;&lt;/em&gt;</strong><br />
+this is not correct - <strong>&lt;em&gt;&lt;strong&gt;</strong>text here<strong>&lt;/em&gt;&lt;/strong&gt;</strong>
+</p>
+
+<p>
+Another inline tag is the <strong>span</strong> tag:
+</p>
+
+<div class="code">&lt;span&gt;&lt;/span&gt;</div>
+
+<p>
+The <strong>span</strong> tag alone doesn't do anything but when combined with CSS it can change the appearance of text within a sentence, so let's see how we can add some CSS code to our tags in <a href="lesson4.html"> lesson 4</a>.
+</p>
+
+</div>
+
+</div>
+
+</body>
+
+</html>

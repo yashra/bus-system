@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>CSS Made Easy A Crash Course In Cascading Sheet Styles for Beginners</title>
+
+<link rel="stylesheet" href="pcs1.css" type="text/css">
+<script src="jquery-3.2.0.js"></script>
+<script>
+$('document').ready(function(){
+$('a.example').css('color','red');
+$('a.example').css('text-decoration','none');
+$('a.example:hover').css('color','blue');
+$('a.example:hover').css('text-decoration','underline');
+});
+</script>
+
+</head>
+
+<body>
+
+<div id="container">
+<h1>CSS MADE EASY <span class="subh">
+Web Design for Beginners</span></h1>
+
+<div id="topmenu">
+
+<ul class="navtab">
+<li class="navtab"><a href="pht1.html" class="topbar">HTML Tutorial</a></li>
+<li id="tab">CSS Tutorial</li> 
+<li class="navtab"><a href="ptem1.html" class="topbar">Web Templates</a></li>
+<li class="navtab"><a href="pcon1.html" class="topbar">Contact</a></li>
+</ul>
+
+</div>
+
+<div id="graybar">
+<a href="images/ht1.jpg" target="_blank"><img src="images/ht1.jpg" alt="Baby Product image" border="0" /></a>
+</div>
+
+<div id="sidebar">
+<div class="sidetitle">CSS MADE EASY</div>
+<p class="sidelink">
+<a href="pcs1.html" class="sidenav">Introduction To CSS</a>
+<a href="pcsl1.html" class="sidenav">Lesson1: External Style Sheet</a>
+<a href="pcsl2.html" class="sidenav">Lesson2: CSS Mouseover</a>
+<a href="pcsl3.html" class="sidenav">Lesson3: Classes</a>
+<a href="pcsl4.html" class="sidenav">Lesson4: Selectors</a>
+<a href="pcsl5.html" class="sidenav">Lesson5: Properties</a>
+</p>
+
+<div class="sidetitle">HTML EXTRAS</div>
+<p class="sidelink">
+<a href="colorcodes.html" class="sidenav">Color Chart</a>
+<a href="graphics.html" class="sidenav">Web Graphics</a>
+</p>
+
+</div>
+
+<div id="content">
+
+<h2 class="text">Lesson 1 <br /> Making An External Style Sheet</h2>
+
+You're about to get a crash course in CSS by learning how to do a mouseover like this:
+
+<p style="text-align:center;">
+<a href="pcs1.html" onclick="alert('link doesn't go anywhere')" class="example">move mouse pointer over link</a>
+</p>
+
+That's what's called a mouseover, but you already know that, and now you're going to know how to make one,
+so hang on to your hat because here we go.
+
+
+<p>
+<strong class="subheading">Making An External Style Sheet</strong><br />
+First thing we are going to do is make a CSS file, better known as an <em>external style sheet</em>.  Oh relax it's going to be easy. The external style sheet contains nothing but CSS code. From this one file it's possible to make changes to all your webpages at once.
+</p>
+
+<p>
+To make the external style sheet open any text editor such as 
+Notepad. and save the blank file by choosing <strong>Save As</strong>, 
+give your file a name, any name you like, for example 
+<strong>mystyle</strong> and add the <strong>.css</strong> extension to it like so:
+</p>
+
+
+<div class="code">
+<strong>mystyle.css</strong>
+</div>
+
+<p>
+You've just made what's called an "external style sheet", aka CSS file.
+Save the file in the same folder you keep your webpages. Now open up a webpage and put the following
+ code between the opening and closing <strong>head</strong>
+tags:
+</p>
+
+<div class="code">
+<strong>&lt;link rel="stylesheet" href="mypage.css" type="text/css"&gt;</strong>
+</div>
+
+<p style="border-bottom:1px dotted #000000; padding-bottom:20px;">
+That bit of code is telling the browser to display things on the web page according to what's in the external style sheet. Every web page that has this code will be affected by the CSS in that external style sheet. Replace <strong>"mystyle.css"</strong> with the name you gave your CSS
+file and you're all set to write your first piece of CSS code. So let's make our <a href="pcsl2.html">Mouseover</a>.</p>
+
+
+</body>
+
+</html>

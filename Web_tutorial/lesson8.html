@@ -1,0 +1,238 @@
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>Making HTML Tables Tutorial</title>
+
+
+<link rel="stylesheet" href="pcs1.css" type="text/css" />
+
+</head>
+
+<body>
+
+<div id="container">
+<h1>HTML MADE EASY <span class="subh">
+Web Design for Beginners</span></h1>
+
+<div id="topmenu">
+<ul class="navtab">
+<li id="tab">HTML Tutorial</li>
+<li class="navtab"><a href="pcs1.html" class="topbar">CSS Tutorial</a></li> 
+<li class="navtab"><a href="ptem1.html" class="topbar">Web Templates</a></li>
+<li class="navtab"><a href="pcon1.html" class="topbar">Contact</a></li>
+</ul>
+</div>
+
+<div id="graybar">
+<a href="images/ht2.jpg" target="_blank"><img src="images/ht2.jpg" alt="Templates Image" border="0" /></a>
+</div>
+
+<div id="sidebar">
+<div class="sidetitle">HTML TUTORIAL</div>
+<p class="sidelink">
+<a href="pht1.html" class="sidenav">Introduction</a>
+<a href="lesson1.html" class="sidenav">Lesson1: Tags</a>
+<a href="lesson2.html" class="sidenav">Lesson2: Block Tags</a>
+<a href="lesson3.html" class="sidenav">Lesson3: Inline Tags</a>
+<a href="lesson4.html" class="sidenav">Lesson4: Attributes</a>
+<a href="lesson5.html" class="sidenav">Lesson5: Graphics</a>
+<a href="lesson6.html" class="sidenav">Lesson6: Links</a>
+<a href="lesson7.html" class="sidenav">Lesson7: Lists</a>
+<a href="lesson8.html" class="sidenav">Lesson8: Tables</a>
+<a href="frames.html" class="sidenav">Lesson9: Frames</a>
+</p>
+
+<div class="sidetitle">HTML EXTRAS</div>
+
+<p class="sidelink">
+<a href="colorcodes.html" class="sidenav">Color Chart</a>
+<a href="graphics.html" class="sidenav">Web Graphics</a>
+</p>
+
+</div>
+
+<div id="content">
+<h2 class="text">Lesson 8: Tables</h2>
+<div class="subheading">Making A Table</div>
+We're talking here tables for holding data not the dinner table. Tables are useful in laying out the design of web pages so it's well worth the time to learn how to make them. A table starts and ends with the <strong>table</strong> tag:
+
+<p class="code">&lt;table&gt;&lt;/table&gt;</p>
+
+<p>
+Between the opening and closing <strong>table</strong> tags go a couple of other tags, the <strong>tr</strong> tag:
+</p>
+
+<div class="code">
+&lt;tr&gt;&lt;/tr&gt;
+</div>
+
+<p>
+It stands for <em>"table row"</em> and will make up one row across the table. Between the <strong>tr</strong> tags are found the <strong>td</strong> tags:
+</p>
+
+
+<div class="code">
+&lt;td&gt;&lt;/td&gt;
+</div>
+
+<p>
+The <strong>td</strong> stands for <em>"table data"</em> it forms one box called a <em>"cell"</em> which contains content seen on the web page such as text or graphics. Here's how the table code is put together:
+</p>
+
+
+<p><strong>
+&lt;table border="1"&gt;
+<br /><br />
+&lt;tr>
+<br />
+&lt;td&gt;</strong>Beagle<strong>&lt;/td&gt;
+<br />
+&lt;td&gt;</strong>Chihuahua<strong>&lt;/td&gt;
+<br />
+&lt;/tr&gt;
+<br /><br />
+&lt;tr>
+<br />
+&lt;td&gt;</strong>Terrier<strong>&lt;/td&gt;
+<br />
+&lt;td&gt;</strong>Collie<strong>&lt;/td&gt;
+<br />
+&lt;/tr&gt;
+<br /><br />
+&lt;/table&gt;
+</strong></p>
+
+
+<p>
+Putting a <strong>border</strong> attribute in the <strong>table</strong> tag will help you see how the  table and cells are formed, setting the <strong>border</strong> attribute to <strong>"0"</strong> will remove the borders altogether.
+</p>
+
+<p>
+Take a close look at the code, this table will have 2 rows with 2 cells in each row. The stuff between the opening and closing <strong>td</strong> tags is what will be in each cell. Note that each row is finished off with the closing <strong>tr</strong> tag. Finally the table is finished by ending it with the closing <strong>table</strong> tag.
+</p>
+
+<p>Result:</p>
+
+<table border="1"> 
+
+<tr> 
+<td>Beagle</td> 
+<td>Chihuahua</td> 
+</tr> 
+
+<tr> 
+<td>Terrier</td> 
+<td>Collie</td> 
+</tr> 
+
+</table> 
+
+<p>
+Remember the  <strong>style</strong> attribute from <a href="lesson4.html"> lesson 4</a>? Put it into the opening <strong>td</strong> tags with a CSS <strong>padding</strong> command to add some space around the content of the cells:
+</p>
+
+<div class="code">
+&lt;td style="padding:10px;"&gt;<span style="font-weight:normal;">Beagle</span>&lt;/td&gt;
+</div>
+
+<p>
+Result:
+</p>
+
+<table border="1"> 
+
+<tr> 
+<td style="padding:10px;">Beagle</td> 
+<td>Chihuahua</td> 
+</tr> 
+
+<tr> 
+<td>Terrier</td> 
+<td>Collie</td> 
+</tr> 
+
+</table> 
+
+<p>
+We can make a table larger by putting the <strong>style</strong> attribute into the opening <strong>table</strong> tag and giving it a CSS <strong>width</strong> command:
+</p>
+
+<div class="code">&lt;table border="1" style="width:300px;"&gt;</div>
+
+<p>Result:</p>
+
+<table border="1" style="width:300px;"> 
+
+<tr> 
+<td style="padding:10px;">Beagle</td> 
+<td>Chihuahua</td> 
+</tr> 
+
+<tr> 
+<td>Terrier</td> 
+<td>Collie</td> 
+</tr> 
+
+</table>
+
+<p>Add the a CSS <strong>vertical-align</strong> command to a <strong>td</strong> tag and the content of that cell will start at the top of the cell:
+</p>
+
+<div class="code">&lt;td style="vertical-align:top;"&gt;<span style="font-weight:normal;">Chihuahua</span>&lt;/td&gt;</div>
+
+<p>
+Result:
+</p>
+
+<table border="1" style="width:300px;"> 
+
+<tr> 
+<td style="padding:10px;">Beagle</td> 
+<td style="vertical-align:top;">Chihuahua</td> 
+</tr> 
+
+<tr> 
+<td>Terrier</td> 
+<td>Collie</td> 
+</tr> 
+
+</table>
+
+<p>
+Let's change the color of a cell with CSS <strong>background</strong> command:
+</p>
+ 
+<div class="code">
+&lt;td style="background:silver;"&gt;<span style="font-weight:normal;">Terrier</span>&lt;/td&gt; 
+</div>
+
+<p>
+Result:
+</p>
+
+<table border="1" style="width:300px;"> 
+
+<tr> 
+<td style="padding:10px;">Beagle</td> 
+<td style="vertical-align:top;">Chihuahua</td> 
+</tr> 
+
+<tr> 
+<td style="background:silver;">Terrier</td> 
+<td>Collie</td> 
+</tr> 
+
+</table>
+ 
+
+</div>
+
+</div>
+
+</body>
+
+</html>

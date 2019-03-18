@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+<title>How To Make CSS Class Selectors For Links</title>
+<link rel="stylesheet" href="pcs1.css" type="text/css">
+
+</head>
+
+<body>
+
+<div id="container">
+<h1>CSS Made Easy <span class="subh">
+Web Design for Beginners</span></h1>
+
+<div id="topmenu">
+<ul class="navtab">
+<li class="navtab"><li class="navtab"><a href="pht1.html" class="topbar">HTML Tutorial</a></li>
+<li id="tab">CSS Tutorial</li> 
+<li class="navtab"><a href="ptem1.html" class="topbar">Web Templates</a></li>
+<li class="navtab"><a href="pcon1.html" class="topbar">Contact</a></li>
+</ul>
+</div>
+
+<div id="graybar">
+<a target="_blank" href="images/ht4.gif"><img src="images/ht4.gif" alt="Create your site at Weebly.com!" border="0" /></a>
+</div>
+
+<div id="sidebar">
+<div class="sidetitle">CSS MADE EASY</div>
+<p class="sidelink">
+<a href="pcs1.html" class="sidenav">Introduction To CSS</a>
+<a href="pcsl1.html" class="sidenav">Lesson1: External Style Sheet</a>
+<a href="pcsl2.html" class="sidenav">Lesson2: CSS Mouseover</a>
+<a href="pcsl3.html" class="sidenav">Lesson3: Classes</a>
+<a href="pcsl4.html" class="sidenav">Lesson4: Selectors</a>
+<a href="pcsl5.html" class="sidenav">Lesson5: Properties</a>
+</p>
+
+<div class="sidetitle">HTML EXTRAS</div>
+<p class="sidelink">
+<a href="colorcodes.html" class="sidenav">Color Chart</a>
+<a href="graphics.html" class="sidenav">Web Graphics</a>
+</p>
+
+</div>
+
+<div id="content">
+
+<h2 class="text">Lesson 3<br />Class Selectors</h2><br />
+
+<strong class="subheading">Making Classes</strong><br />
+
+By making different <em>"classes"</em> of selectors you can choose
+ which links on a webpage are to be affected by the CSS code. Classes are made by giving the selector a name, any name:
+
+<pre class="textcode">a.sidebar {color:red;}
+a.sidebar:hover {color:blue;}
+</pre>
+<p>The name given to the selectors is <strong>sidebar</strong>, notice that the name is separated from the
+selector with a dot and there is a colon between the name and the word <strong>hover</strong>
+
+</p>
+
+<p>
+Next we need to specify which links will be affected, this is done by opening the webpage and inserting the <strong>class</strong> attribute
+into the anchor tags like so:
+</p>
+
+<div class="code">&lt;a href="filename.html" <span class="highlight">class="sidebar"</span>&gt;<span style="font-weight:normal;">Your link</span>&lt;/a&gt;</div>
+
+<p>
+As you have probably guessed, any anchor tag that contains <strong>class="sidebar"</strong> will have red
+links that turn blue when the mouse pointer is placed over the link.
+</p>
+
+
+<p>
+Multiple classes of selectors can be made so that some tags will obey one set of commands while other tags obey another set of commands:
+</p>
+
+<pre class="textcode">
+a.sidebar {color:red;}
+a.sidebar:hover {color:blue;}
+
+a.top {text-decoration:none;} 
+a.top:hover {text-decoration:underline;}
+</pre>
+
+<p>
+In the example every anchor tag that contains <strong>class="top"</strong> will have an underline appear on the mouseover while those
+tags with <strong>class="sidebar"</strong> will change color on the mouseover.
+</p>
+
+<p>
+Classes are not just for links, but can be used for any HTML tag as you will learn in the next lesson on <a href="pcsl4.html">Selectors</a>.
+</p>
+
+</div>
+
+</body>
+
+</html>

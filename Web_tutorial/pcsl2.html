@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+<title>Beginners CSS Tutorials For Making Link Mouseovers</title>
+<link rel="stylesheet" href="pcs1.css" type="text/css" />
+<script src="jquery-3.2.0.js"></script>
+<script>
+$('document').ready(function(){
+$('a.example').css('color','red');
+$('a.example').css('text-decoration','none');
+$('a.example:hover').css('color','blue');
+$('a.example:hover').css('text-decoration','underline');
+});
+</script>
+</head>
+
+<body>
+
+<div id="container">
+<h1>CSS MADE EASY <span class="subh">
+Web Design for Beginners</span></h1>
+
+<div id="topmenu">
+
+<ul class="navtab">
+<li class="navtab"><a href="pht1.html" class="topbar">HTML Tutorial</a></li>
+<li id="tab">CSS Tutorial</li> 
+<li class="navtab"><a href="ptem1.html" class="topbar">Web Templates</a></li>
+<li class="navtab"><a href="pcon1.html" class="topbar">Contact</a></li>
+</ul>
+</div>
+
+<div id="graybar">
+<a href="images/ht3.gif" target="_blank"><img src="images/ht3.gif" width="720" height="90" alt="Place for hosting" border="0" style="display:block; margin:auto;"/></a>
+
+</div>
+
+<br />
+
+<div id="sidebar">
+<div class="sidetitle">CSS MADE EASY</div>
+<p class="sidelink">
+<a href="pcs1.html" class="sidenav">Introduction To CSS</a>
+<a href="pcsl1.html" class="sidenav">Lesson1: External Style Sheet</a>
+<a href="pcsl2.html" class="sidenav">Lesson2: CSS Mouseover</a>
+<a href="pcsl3.html" class="sidenav">Lesson3: Classes</a>
+<a href="pcsl4.html" class="sidenav">Lesson4: Selectors</a>
+<a href="pcsl5.html" class="sidenav">Lesson5: Properties</a>
+</p>
+
+<div class="sidetitle">HTML EXTRAS</div>
+<p class="sidelink">
+<a href="colorcodes.html" class="sidenav">Color Chart</a>
+<a href="graphics.html" class="sidenav">Web Graphics</a>
+</p>
+</div>
+
+<div id="content">
+
+<h2 class="text">Lesson 2<Br />CSS Mouseover</h2>
+
+<strong class="subheading">CSS Structure</strong><br />
+
+Open up the external style sheet you made in the previous lesson and type in this:
+
+<p class="code">a {color:red;}</p>
+
+<p>
+That bit of code is telling all links to display red text.
+The <strong>a</strong> is called a selector. 
+Selectors determine which HTML tags will be manipulated by CSS commands. Any HTML tag can have a corresponding selector, the <strong>a</strong> selector redefines links.
+</p>
+
+<p>
+The stuff in the curly brackets is a CSS command, CSS commands consist of a property and the property's value,
+ <strong>color</strong> is a property and <strong>red</strong> is its value. Notice there is a colon between the property and its value, and that there is
+a semi colon at the end of the value.  That is how CSS code is structured.
+</p>
+<p>
+ Next add this in your external style sheet:
+</p>
+
+<div class="code">a:hover {color:blue;}</div>
+
+
+<p>
+We've added another <strong>a</strong> selector but this time it has the word <strong>hover</strong> with a colon between, it specifies
+what type of link is to be affected by the property, <strong>hover</strong> means it's a link with a mouse pointer over it. So this is what we have in the external style sheet so far:
+
+</p>
+
+<pre class="textcode">
+a {color:red;} 
+a:hover {color:blue;}
+</pre>
+<p>Save the external style sheet and refresh your webpage. Well, does your webpage have red links? Do they turn blue when the mouse pointer is moved over them? They do?
+Congratulations, you've just made a mouseover! But we're not finished yet.</p>
+
+<p>
+Add this new command to the <strong>hover</strong> selector:
+</p>
+
+<pre class="textcode">
+a:hover {
+    color:blue; 
+   <span class="highlight"> text-decoration:none;</span>
+ }</pre>
+<p>Selectors can have more than one property as long as they are between the curly brackets and each command ends with the semi colon, <strong>text-decoration:none;</strong> removes the underline from text. Save your external style sheet and check out your webpage, when the mouse pointer is now 
+moved over the link not only will the link turn blue but the underline will disappear too! Is that cool or what?</p>
+
+<p>Put the <strong>text-decoration</strong> property in the <strong>a</strong> selector to remove the underline from all links, 
+but in the <strong>hover</strong> selector
+change it's value to <strong>underline</strong>
+ and the line will appear under the link when a mouse pointer is moved over it:
+</p>
+
+<pre class="textcode">
+a {
+ color:red;
+ <span class="highlight"> text-decoration:none;</span>
+ }
+
+a:hover {
+    color:blue; 
+    <span class="highlight"> text-decoration:underline;</span>
+ }
+</pre>
+
+<p>Result:</p>
+
+<p style="text-align:center;">
+<a href="pcs1.html" class="example">move mouse pointer over link</a>
+</p>
+
+<p>
+As you can see, different combinations of properties and values can make for some pretty cool mouseovers,
+ it's just a matter getting to know the properties, their possible values, and 
+what they can do. 
+</p>
+
+<p>
+Next you're going to learn how to specify which links on the webpage will be affected by CSS code.
+<a href="pcsl3.html">Lesson3: Classes</a>
+</p>
+
+</div>
+
+</div>
+
+</body>
+
+</html>

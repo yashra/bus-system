@@ -1,0 +1,32 @@
+#xyz{
+  margin-left:50px;
+}
+
+#d{
+  margin-left:70px;
+  margin-right:5px;
+}
+
+#fot{
+  background-color:rgb(38,37,37);
+  height:100px;
+  margin-top:-15px;
+  margin-bottom:auto;
+  margin-right:auto;
+  width:100%;
+}
+
+#im{
+  background-color:rgba(40,153,58,0.15);
+  margin-top:-18px;
+  margin-right:0px;
+  padding-bottom:-73px;
+  margin-bottom:-76px;
+}
+
+#f{
+  padding-left:25px;
+  padding-top:9px;
+  font-size:x-large;
+}
+

@@ -1,0 +1,136 @@
+
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+
+<title>How To Link To Websites and Webpages</title>
+
+<link rel="stylesheet" href="pcs1.css" type="text/css" />
+
+</head>
+
+<body>
+
+<div id="container">
+<h1>HTML MADE EASY <span class="subh">
+Web Design for Beginners</span></h1>
+
+<div id="topmenu">
+<ul class="navtab">
+<li id="tab">HTML Tutorial</li>
+<li class="navtab"><a href="pcs1.html" class="topbar">CSS Tutorial</a></li> 
+<li class="navtab"><a href="ptem1.html" class="topbar">Web Templates</a></li>
+<li class="navtab"><a href="pcon1.html" class="topbar">Contact</a></li>
+</ul>
+</div>
+
+<div id="graybar">
+<a href="images/ht2.jpg" target="_blank"><img src="images/ht2.jpg" alt="Templates Image" border="0" /></a>
+</div>
+
+<br />
+
+<div id="sidebar">
+<div class="sidetitle">HTML TUTORIAL</div>
+<p class="sidelink">
+<a href="pht1.html" class="sidenav">Introduction</a>
+<a href="lesson1.html" class="sidenav">Lesson1: Tags</a>
+<a href="lesson2.html" class="sidenav">Lesson2: Block Tags</a>
+<a href="lesson3.html" class="sidenav">Lesson3: Inline Tags</a>
+<a href="lesson4.html" class="sidenav">Lesson4: Attributes</a>
+<a href="lesson5.html" class="sidenav">Lesson5: Graphics</a>
+<a href="lesson6.html" class="sidenav">Lesson6: Links</a>
+<a href="lesson7.html" class="sidenav">Lesson7: Lists</a>
+<a href="lesson8.html" class="sidenav">Lesson8: Tables</a>
+<a href="frames.html" class="sidenav">Lesson9: Frames</a>
+</p>
+
+<div class="sidetitle">HTML EXTRAS</div>
+
+<p class="sidelink">
+<a href="colorcodes.html" class="sidenav">Color Chart</a>
+<a href="graphics.html" class="sidenav">Web Graphics</a>
+</p>
+
+</div>
+
+<div id="content">
+
+<h2 class="text">Lesson 6: Links</h2>
+<div class="subheading">Putting It All Together</div>
+Links, this is what the web is all about and it's simple to do with anchor tags:
+
+<p class="code">&lt;a&gt;&lt;/a&gt;</p>
+
+<p>
+The anchor tag comes with the <strong>href</strong> attribute. It means <em>"hpertext reference"</em>. This attribute tells
+the browser where to find a link. A link to a web page within the same directory (folder) of the
+website would look like this:
+</p>
+
+<div class="code">
+&lt;a href="filename.html"&gt;<span style="font-weight:normal;">here goes text to be clicked</span>&lt;/a&gt;
+</div>
+
+<p>
+The <strong>href</strong> attribute contains the file name of the destination web page. The file name is enclosed
+in quotation marks and it includes the html extension. The text between the opening and closing
+<strong>a</strong> tag is the link people will click. To keep things simple, for now place all your web pages in the
+same folder (directory).
+</p>
+
+<p>
+Linking to another website is done by putting the entire website address (url) into the href
+attribute:
+</p>
+
+<div class="code">
+&lt;a href="http://www.siteaddress.com"&gt;<span style="font-weight:normal;">text to be clicked here</span>&lt;/a&gt;
+</div>
+
+<p>
+Be sure that <strong>http://</strong> is included in the website address. Turning an image into a link is done by
+surrounding the <strong>img</strong> tag with the opening and closing <strong>a</strong> tags:
+</p>
+
+<div class="code">
+&lt;a href="filename.html"&gt;&lt;img src="filename.jpg"&gt;&lt;/a&gt;
+</div>
+
+<p>
+Replace <strong>filename.html</strong> with the file name of the page or website address, and replace
+<strong>filename.jpg</strong> with the file name of your picture. 
+</p>
+
+<p>
+By default image links have a blue border
+around them, the border can be removed by adding the <strong>style</strong> attribute with a CSS <strong>border</strong>
+command:
+</p>
+
+<p class="code">&lt;img src="filename.jpg" style="border:0;"&gt;</p> 
+
+<div class="subheading">Email Link</div>
+Putting an email link on web pages is done by entering the email address in the <strong>href</strong> attribute
+preceded by a <strong>mailto:</strong> command like so:
+
+<p class="code">&lt;a href="mailto:waterart.bizland.com"&gt;<span style="font-weight:normal;">here goes what people click</span>&lt;/a&gt;</p>
+
+<p>
+Notice there is a colon between <strong>mailto</strong> and the email address and that they are enclosed in quotation marks. By the way, in case you haven't noticed by now, there is a space between the <strong>a</strong> and the <strong>href</strong> attribute.
+</p>
+
+</p>
+And that's how to make links, next we're going to make a list in  <a href="lesson7.html"> lesson 7</a>.
+</p>
+
+
+</div>
+
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href = "logo2.png" rel="icon" type="image/gif">
+
+    <title>Register page</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="F:/Sublime Text 3/html/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style type="text/css">
+      body
+      {
+        background-image: url(p5.jpg);
+        background-size: 122% 160%;
+        /*background-repeat: no-repeat;*/
+        font-family: 'Dancing Script', cursive;
+      }
+      .con
+      {
+        border:2px dotted black;
+        padding: 10px 10px 10px 10px;
+      }
+      .btn-hover {
+  font-weight: normal;
+  color: #333333;
+  cursor: pointer;
+  background-color: inherit;
+  border-color: transparent;
+}
+nav:hover 
+{
+    background-color: rgba(255, 255, 255, 0.59);
+     max-height: 75px;
+     min-height: 20px;
+     margin-bottom: 6px;
+}
+.a
+{
+  height: 60px;
+  width: 60px;
+}
+    </style>
+  </head>
+
+  <body>
+
+   <nav class="navbar navbar-expand-md navbar-light ">
+   <div class="container">
+  <a class="navbar-brand btn-hover text-danger" style="font-size: 22px" href="#"> <img src="logo2.png" alt="Sweets" class="a"> HOME FLAVOURS</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="nav text-md-center nav-pills">
+      <li class="nav-item active">      
+      <a class="nav-link btn-hover btn-secondary" style="font-size: 17px" href="#"> <i class="fa fa-home fa-lg" aria-hidden="false"></i> HOME<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item ">
+        <a class="nav-link btn-hover btn-secondary" style="font-size: 17px" href="#"> <i class="fa fa-shopping-cart" aria-hidden="true"></i> CART</a>
+      </li>
+     
+      <li class="nav-item ">
+        <a class="nav-link btn-hover btn-secondary" style="font-size: 17px" href="#"> <i class="fa fa-question-circle fa-lg" aria-hidden="true"></i> ENQUIRY</a>
+      </li>
+    </ul>
+  </div>
+  </div>
+</nav>
+<br>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-5">
+        <h1 style="color:orange">New User?</h1><br>
+        <div class="con">
+          <form>          
+  <div class="form-group">
+    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Fullname">
+  </div>
+  <div class="form-group">
+    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Email-id">
+  </div>
+  <div class="form-group">
+    <input type="text" class="form-control" id="formGroupExampleInput3" placeholder="Password">
+  </div>
+  <div class="form-group">
+    <input type="text" class="form-control" id="formGroupExampleInput4" placeholder="Confirm Password">
+  </div>
+  <div class="form-group">
+    <input type="text" class="form-control" id="formGroupExampleInput5" placeholder="Country">
+  </div>
+<div class="form-group">
+    <input type="text" class="form-control" id="formGroupExampleInput6" placeholder="City">
+  </div>
+  <div class="form-group">
+    <input type="text" class="form-control" id="formGroupExampleInput7" placeholder="Mobile number">
+  </div>
+  <button type="submit" class="btn btn-primary">Signup</button>&nbsp;&nbsp;
+  <button type="reset" class="btn btn-primary">Reset</button>
+</form>
+</div>
+        </div>
+        <div class="col-md-3">
+        </div>
+        <div class="col-md-4">
+        <h1 style="color:orange">Already have an account?</h1><br>
+        <div class="con">
+          <form>
+  <div class="form-group">
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+    <small id="emailHelp" class="form-text " style="color:yellow">We'll never share your email with anyone else.</small>
+  </div>
+  <div class="form-group">
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+  </div>
+  <div class="form-check" style="color:yellow">
+    <label class="form-check-label">
+      <input type="checkbox" class="form-check-input">
+      Remember me
+    </label>
+  </div>
+  <div>
+    <a class="form-text text-warning" href=#><u>Forget Password </u>?</a>
+  </div><br>
+  <button type="submit" class="btn btn-primary">Login</button>&nbsp;&nbsp;
+  <button type="reset" class="btn btn-primary">Reset</button>
+</form>
+</div>
+        </div>
+        
+      </div>
+      </div>
+
+    </div> 
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="../../../../assets/js/vendor/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../../../assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>
+

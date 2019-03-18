@@ -1,0 +1,152 @@
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>Attributes for HTML Tags</title>
+
+<link rel="stylesheet" href="pcs1.css" type="text/css" />
+
+</head>
+
+<body>
+
+<div id="container">
+<h1>HTML MADE EASY <span class="subh">
+Web Design for Beginners</span></h1>
+
+<div id="topmenu">
+<ul class="navtab">
+<li id="tab">HTML Tutorial</li>
+<li class="navtab"><a href="pcs1.html" class="topbar">CSS Tutorial</a></li> 
+<li class="navtab"><a href="ptem1.html" class="topbar">Web Templates</a></li>
+<li class="navtab"><a href="pcon1.html" class="topbar">Contact</a></li>
+</ul>
+</div>
+
+<div id="graybar">
+<a href="images/ht6.jpg" target="-blank">
+<img src="images/ht6.jpg" alt="dog portraits" title="pet portraits" border="0"></a>
+</div>
+
+<br />
+
+<div id="sidebar">
+<div class="sidetitle">HTML TUTORIAL</div>
+<p class="sidelink">
+<a href="pht1.html" class="sidenav">Introduction</a>
+<a href="lesson1.html" class="sidenav">Lesson1: Tags</a>
+<a href="lesson2.html" class="sidenav">Lesson2: Block Tags</a>
+<a href="lesson3.html" class="sidenav">Lesson3: Inline Tags</a>
+<a href="lesson4.html" class="sidenav">Lesson4: Attributes</a>
+<a href="lesson5.html" class="sidenav">Lesson5: Graphics</a>
+<a href="lesson6.html" class="sidenav">Lesson6: Links</a>
+<a href="lesson7.html" class="sidenav">Lesson7: Lists</a>
+<a href="lesson8.html" class="sidenav">Lesson8: Tables</a>
+<a href="frames.html" class="sidenav">Lesson9: Frames</a>
+</p>
+
+<div class="sidetitle">HTML EXTRAS</div>
+
+<p class="sidelink">
+<a href="colorcodes.html" class="sidenav">Color Chart</a>
+<a href="graphics.html" class="sidenav">Web Graphics</a>
+</p>
+
+</div>
+
+<div id="content">
+
+
+<h2 class="text">Lesson 4: Attributes</h2>
+
+<a target="_blank" href="images/ht23.jpg"><img src="images/ht23.jpg"  border="0" style="float:right; margin-left:20px;" /></a>
+
+<p>
+<strong class="subheading">Telling Tags What To Do</strong><br />
+We can change the way tags display things on web pages by putting what's called an <em>"attribute"</em> into an opening tag. Many of the things that were done with attibutes are now done with CSS, so this lesson will show you how to put CSS code into tags by the use of the <strong>style</strong> attribute:
+</p>
+
+
+<div class="code">
+&lt;h1 style="text-align:center;"&gt;<span style="font-weight:normal;">My Webpage</span>&lt;/h1&gt;
+</div>
+
+<p>
+The <strong>style</strong> attribute's job is to  hold CSS code, that's the stuff in the quotation marks. In the above example it's telling the <strong>h1</strong> tag to center the text on the web page. Notice that there is a colon between <strong>text-align</strong> and <strong>center</strong> and at the end of <strong>center</strong> there is a semi colon. This is how CSS commands are structured. 
+</p>
+
+<p>
+The text in our example can further be changed by adding another CSS command to the <strong>style</strong> attribute:
+</p>
+
+<div class="code">&lt;h1 style="text-align:center; color:red;"&gt;<span style="font-weight:normal;">My Webpage</span>&lt;/h1&gt;</div>
+
+<p>
+The result would be red text centered on the web page. An unlimited amount of CSS commands can be added to the <strong>style</strong> attribute as long as they are enclosed between the quotation marks and each command ends with a semi colon.
+</p>
+
+<p>
+The <strong>style</strong> attribute can be put in any opening tag to change some aspect of the tag, for instance when used with the <strong>body</strong> tag, all the text on a web page can be displayed in a different font:
+</p>
+
+<div class="code"><strong>&lt;body style="font-family:arial;"&gt;</strong></div>
+
+<p>
+The <strong>font-family</strong> command changes the text font, in this example it's in<span style="font-family:arial;"> Arial</span> style.Adding a CSS background command in the <strong>body</strong> tag changes the page's background color:
+</p>
+
+<p class="code">&lt;body style="background:red;"&gt;</p>
+
+<p>
+That would give your web page a red background (you don't really want a red  web page do you?). Colors can be specified by either using the name of the color or its color code, for example <strong>#ff0000</strong> is the color code for red:
+</p>
+
+<div class="code">
+&lt;body style="background:#ff0000;"&gt;</div>
+
+<p>
+The number sign, <strong>#</strong> must be included in front of the code when specifying colors by their color code.
+</p>
+
+<p>
+<strong class="subheading">Changing Font Size</strong><br />
+Changing the size of text is easy with the CSS <strong>font-size</strong> command:
+</p>
+
+<p class="code">
+&lt;em style="font-size:40px;"&gt;<span style="font-weight:normal;">I'm bigger</span>&lt;/em&gt; <span style="font-weight:normal;">than you</span>
+</p>
+
+<p>
+The result would look like this:
+</p>
+
+<p>
+<em style="font-size:40px; font-family:times new roman;">I'm bigger</em> than you
+</p>
+
+<p>
+Size of text is determined by the number, the larger the number the bigger the text, <strong>px</strong> stands for "pixels". 
+</p>
+
+<p>
+CSS commands are usually put in a CSS file called an <em>"external style sheet"</em> but the <strong>style</strong> attribute is a simple way to use CSS directly in the HTML code until you get to know more about CSS. 
+</p>
+
+<p style="margin-bottom:35px;">
+As we move along in the tutorial you will be introduced to other attributes such as the <strong>src</strong> attribute which helps a tag put a picture on the web page. So let's head on over to  <a href="lesson5.html"> lesson 5</a>.
+</p>
+
+</div>
+
+
+
+</div>
+
+
+</body>
+
+</html>

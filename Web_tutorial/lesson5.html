@@ -1,0 +1,141 @@
+
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+
+<title>How To Make A Website - Put Graphics on Webpages</title>
+
+<link rel="stylesheet" href="pcs1.css" type="text/css" />
+
+</head>
+
+<body>
+
+<div id="container">
+<h1>HTML MADE EASY <span class="subh">
+Web Design for Beginners</span></h1>
+
+<div id="topmenu">
+<ul class="navtab">
+<li id="tab">HTML Tutorial</li>
+<li class="navtab"><a href="pcs1.html" class="topbar">CSS Tutorial</a></li> 
+<li class="navtab"><a href="ptem1.html" class="topbar">Web Templates</a></li>
+<li class="navtab"><a href="pcon1.html" class="topbar">Contact</a></li>
+</ul>
+</div>
+
+<div id="graybar">
+<a href="images/ht6.jpg" target="-blank">
+<img src="images/ht6.jpg" alt="dog portraits" title="pet portraits" border="0"></a>
+</div>
+
+<br />
+
+<div id="sidebar">
+<div class="sidetitle">HTML TUTORIAL</div>
+<p class="sidelink">
+<a href="pht1.html" class="sidenav">Introduction</a>
+<a href="lesson1.html" class="sidenav">Lesson1: Tags</a>
+<a href="lesson2.html" class="sidenav">Lesson2: Block Tags</a>
+<a href="lesson3.html" class="sidenav">Lesson3: Inline Tags</a>
+<a href="lesson4.html" class="sidenav">Lesson4: Attributes</a>
+<a href="lesson5.html" class="sidenav">Lesson5: Graphics</a>
+<a href="lesson6.html" class="sidenav">Lesson6: Links</a>
+<a href="lesson7.html" class="sidenav">Lesson7: Lists</a>
+<a href="lesson8.html" class="sidenav">Lesson8: Tables</a>
+<a href="frames.html" class="sidenav">Lesson9: Frames</a>
+</p>
+
+<div class="sidetitle">HTML EXTRAS</div>
+
+<p class="sidelink">
+<a href="colorcodes.html" class="sidenav">Color Chart</a>
+<a href="graphics.html" class="sidenav">Web Graphics</a>
+</p>
+
+
+</div>
+
+<div id="content">
+
+<h2 class="text">Lesson 5: Graphics</h2> 
+
+<div class="subheading">Putting A Picture On The Web Page</div>
+Making a website is not complete without adding graphics to make it look nice and pretty.
+Placing a picture on  a web page is done with the <strong>img</strong> tag. The <strong>img</strong> tag is a single tag so does not require a closing tag:
+
+
+<p class="code">&lt;img src="filename.jpg"&gt;</p>
+
+<p>
+The <strong>img</strong> stands for <em>"image"</em>, <strong>src</strong> is an attribute, it tells the browser where to find the picture. The stuff in the quotation marks is the file name of the graphic, replace <strong>filename.jpg</strong> with the file name of your picture and be sure it’s between the quotes. 
+</p>
+
+<p>
+<strong style="text-decoration:underline;">Note</strong><br />
+The file name of the picture must also include its format, e.g. <strong>jpg</strong> as in the above example. More on image format later in this lesson.
+</p>
+
+<p>
+To keep things simple, for now store your pictures in the same place as your web pages, for example if you keep your HTML files in a folder called "my pages", put your pictures there too.
+</p>
+
+<p>
+Every picture on a web page has its very own <strong>img</strong> tag:
+</p>
+
+<p><strong>
+&lt;img src="button.gif"&gt;<br />
+&lt;img src="button2.gif"&gt;
+</strong>
+</p>
+
+<p>
+That will put two pictures side by side on the page:</p>
+
+
+<img src="images/ht24.gif" />
+<img src="images/ht25.gif" alt="light blue button" /> 
+
+<p>
+If an <strong>img</strong> tag is enclosed between the opening and closing <strong>p</strong> tags, the other image will start on a new line:
+</p>
+
+<p><strong>
+&lt;p&gt;&lt;img src="button.gif"&gt;&lt;/p&gt;<br />
+&lt;img src="button2.gif"&gt;
+</strong>
+</p>
+
+<p>Result:</p>
+
+<p><img src="images/ht24.gif" /></p>
+<img src="images/ht25.gif" /> 
+
+<p>
+Give your pictures a description by adding an <strong>alt</strong> attribute to the <strong>img</strong> tag like so:
+</p>
+
+<div class="code">&lt;img src="button2.gif" alt="light blue button"&gt;</div>
+
+<p>The <strong>alt</strong> attribute will make the description appear if a browser does not display images. In some browsers the description will also pop up when a mouse pointer is moved over the picture.
+</p>
+
+
+<div class="subheading">Image Format</div>
+Pictures on the web are usually either in <strong>gif</strong> or <strong>jpg</strong> format. The gif format is mostly used for pictures with solid blocks of color such as charts, or when an image requires a transparent background. The jpg format is suitable for pictures with subtle color changes such as photos. 
+
+
+<p style="border-bottom:1px dotted #000000; padding-bottom:20px;">
+In addition to the proper format, images on websites also need to be optimized, that is, the picture's file size needs to be lowered so that it won't take too long to load. For more info see <a href="graphic.html" target="_blank">Optimizing Graphics</a>. Next we're going to make links in<a href="lesson6.html"> lesson 6</a>. 
+</p>
+
+</div>
+
+</div>
+
+</body>
+
+</html>

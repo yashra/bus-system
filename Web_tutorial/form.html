@@ -1,0 +1,180 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+
+<title>How To Make A Form With HTML Tags</title>
+
+<link rel="stylesheet" href="pcs1.css" type="text/css" />
+
+</head>
+
+<body>
+
+<div id="container">
+<h1>HTML MADE EASY <span class="subh">
+Web Design for Beginners</span></h1>
+
+<div id="topmenu">
+<ul class="navtab">
+<li id="tab">HTML Tutorial</li>
+<li class="navtab"><a href="pcs1.html" class="topbar">CSS Tutorial</a></li> 
+<li class="navtab"><a href="ptem1.html" target="_blank" class="topbar">Web Templates</a></li>
+<li class="navtab"><a href="pcon1.html" class="topbar">Contact</a></li>
+</ul>
+</div>
+
+<div id="graybar">
+<a href="images/ht19.jpg" target="_blank">
+<img src="images/ht19.jpg" alt="custom mugs" width="728" height="90" /></a> 
+</div>
+
+<br />
+
+<div id="sidebar">
+<div class="sidetitle">HTML TUTORIAL</div>
+<p class="sidelink">
+<a href="pht1.html" class="sidenav">Introduction</a>
+<a href="lesson1.html" class="sidenav">Lesson1: Tags</a>
+<a href="lesson2.html" class="sidenav">Lesson2: Block Tags</a>
+<a href="lesson3.html" class="sidenav">Lesson3: Inline Tags</a>
+<a href="lesson4.html" class="sidenav">Lesson4: Attributes</a>
+<a href="lesson5.html" class="sidenav">Lesson5: Graphics</a>
+<a href="lesson6.html" class="sidenav">Lesson6: Links</a>
+<a href="lesson7.html" class="sidenav">Lesson7: Lists</a>
+<a href="lesson8.html" class="sidenav">Lesson8: Tables</a>
+<a href="frames.html" class="sidenav">Lesson9: Frames</a>
+</p>
+
+<div class="sidetitle">HTML EXTRAS</div>
+
+<p class="sidelink">
+<a href="colorcodes.html" class="sidenav">Color Chart</a>
+<a href="graphics.html" class="sidenav">Web Graphics</a>
+</p>
+
+
+</div>
+
+<div id="content">
+<h2 class="text">Tags For Making Contact Forms</h2>
+<div class="subheading">How Forms Work</div>
+
+Although forms are easy to make, getting them to work requires a script which passes along the information from the form to you. There are plenty of free scripts available on the web with instructions on how to configure them. There are also paid and free online services that will process your form, even providing you with ready cut and paste code, all you need to do is insert it into your webpage. This tutorial will show you the tags used to make forms.
+
+<p>
+<strong class="subheading">How To Make A Form</strong><br />
+  
+A form begins with the opening <strong>form</strong> tag: 
+</p>
+
+<p class="code">&lt;form method="post" action="<span style="font-weight:normal; color:red;">script-url-goes-here</span>"&gt;</p>
+
+<p>
+The <strong>form</strong> tag lets the browser know that this is going to be a form, <strong>method="post"</strong> means the information in the form is to be sent to the url in the <strong>action</strong> attribute which contains the url to the script. Replace "<span style="color:red;">script-goes-here</span>" with the url of your script.
+</p>
+
+<p>
+Next come the tags which make up the various element of the form such as the text box:
+</p>
+
+<form><input type="text" style="width:250px;"></form>
+
+<p>
+Here is how it is made:
+</p>
+
+<strong>
+&lt;input type="text" name="<span style="font-weight:normal; color:red;">name your box</span>" style="width:250px;"&gt;
+</strong>
+
+
+<p>
+ The<strong> input</strong> tag is a single tag. The <strong> type</strong> attribute tells the browser what sort of form element to display,<strong>"text"</strong> means
+it is going to be a text box. The attribute <strong>name</strong> is a name you give to the box so that when the form's content is sent to you, you will know in which form element it was entered. The <strong>style</strong> attribute holds CSS code, here it's specifying the width of the text box.
+</p>
+
+<p>
+For multiple text boxes in a single form repeat the code, but give each text box a different name.</p>
+
+<p>
+Another element often found in forms is the <strong>textarea</strong> box. Unlike the text box which only allows a single line of text, the textarea box can have multple lines of text. Go ahead, try it out and see: 
+</p>
+
+<textarea style="width:250px; height:150px;"></textarea>
+
+<p>Here is how it is made:
+</p>
+
+<strong>
+&lt;textarea name="<span style="font-weight:normal; color:red;">name your box</span>" style="width:300px; height:100px;"&gt;&lt;/textarea&gt;
+</strong>
+
+
+<p>
+<p>
+Notice that the <strong>textarea</strong> tag requires a closing tag. The <strong>name</strong> attribute is a name you give to the box so that when the form's content is sent to you, you will know in which form element it was entered. CSS commands can be used to set the width and height of the box.
+</p>
+
+
+<p>
+Some forms have <strong>radio buttons</strong> which allow folks to make a single selection from multiple options. Go ahead give it a try and you will see you can only select one button:
+</p>
+
+<form>
+<input type="radio" name="button" value="button name" />
+<input type="radio" name="button" value="button" />
+<input type="radio" name="button" value="button2" />
+</form>
+
+<p>
+This is how to make a single button, yes you need to repeat the code for each button:
+</p>
+
+<div class="code">&lt;input type="radio" name="<span style="font-weight:normal; color:red;">button group</span>" value="<span style="font-weight:normal; color:red;">button name</span>"&gt;</div>
+
+<p>
+As with the text box, radio buttons also use the <strong>input</strong> tags but this time it is set to <strong>"radio"</strong>. The <strong>name</strong> attribute lets you group the buttons together by giving them the same name, so people will only have the option of selecting one button from the group. The <strong>value</strong> attribute lets you give each button in the group a different name so that you will know which button the person selected.
+</p>
+
+<p>
+Replacing <strong>"radio"</strong> in the <strong>type</strong> attribute with <strong>"checkbox"</strong> will make check boxes allowing multiple choices.
+</p>
+
+<p>The final element in a form is a submit button:</p>
+
+<form>
+<input type="submit" value="subscribe" />
+</form>
+
+<p>This is how it is made:</p>
+
+<div class="code">&lt;input type="submit" value="<span style="font-weight:normal; color:red;">subscribe</span>"&gt;</div>
+
+<p>The <strong> type</strong> attribute set to "<strong>submit</strong>" tells the browser it is a button for sending information, the <strong>value</strong> attribute contains the text that will appear on the button.</p>
+
+<p>
+A reset button can also be added to clear the form:
+</p>
+
+<div class="code">&lt;input type="reset" value="<span style="font-weight:normal; color:red;">clear</span>"&gt;</div>
+
+<p>
+The form is finished by adding the closing <strong>form</strong> tag:
+</p>
+
+<div class="code">
+&lt;/form&gt; 
+</div>
+
+<p>
+And there you go, that is how to make a form.
+</p>
+
+</div>
+</div>
+
+</body>
+
+</html>
