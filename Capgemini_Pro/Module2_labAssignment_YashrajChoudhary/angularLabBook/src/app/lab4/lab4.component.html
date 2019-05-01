@@ -1,0 +1,37 @@
+
+<table  class="table" align="center">
+  <tr>
+    <th colspan="25">Search:
+      <input type="text" [(ngModel)]="queryString">
+
+    </th>
+  </tr>
+    <tr>
+      <th>
+        BookId
+      </th>
+      <th>
+        Book Title
+      </th>
+      <th>
+        Book Author
+      </th>
+      <th>
+        Book Year
+      </th>
+    </tr>
+    <tr *ngFor="let r of resData | search:queryString:'author';">
+      <th>
+        {{r.id}}
+      </th>
+      <th>
+        {{r.title}}
+      </th>
+      <th>
+        {{r.author}}
+      </th>
+      <th>
+       {{r.year}}
+      </th>
+    </tr>
+    </table>

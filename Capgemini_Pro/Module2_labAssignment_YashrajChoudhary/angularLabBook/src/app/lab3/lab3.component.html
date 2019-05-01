@@ -1,0 +1,66 @@
+
+<form [formGroup]="myForm" >
+  <table align="center">
+    <tr>
+      <th>
+Product Id:</th>
+<td> <input type="text" formControlName="id"/>
+<div *ngIf="myForm.controls.id.invalid && myForm.controls.id.touched">
+<div *ngIf="myForm.controls.id.errors.required">
+  ID IS REQUIRED
+</div>
+</div></td></tr>
+<br>
+<tr><th>
+Product Name:</th><td> <input type="text" formControlName="name"/>
+<div *ngIf="myForm.controls.name.invalid && myForm.controls.name.touched">
+<div *ngIf="myForm.controls.name.errors.required">
+  NAME IS REQUIRED
+</div>
+</div>
+</td>
+</tr>
+<br>
+<tr>
+  <th>
+Product Cost:</th><td> <input type="text" formControlName="cost"/>
+<div *ngIf="myForm.controls.cost.invalid && myForm.controls.cost.touched">
+<div *ngIf="myForm.controls.cost.errors.required">
+ COST IS REQUIRED
+</div>
+</div>
+</td></tr>
+<br>
+<tr><th>
+Product Online:</th><td> <input type="radio" formControlName="radios" value="yes">YES
+<input type="radio" formControlName="radios" value="no">NO
+
+<div *ngIf="myForm.get('radios').invalid && myForm.controls.radios.touched">
+  <div *ngIf="myForm.controls.radios.errors.required">
+ PREFERENCE IS REQUIRED
+</div>
+</div>
+</td>
+</tr>
+<br>
+
+</table>
+<div class="form-group" >
+    <label for="contry">PRODUCT CATEGORIES</label>
+    <select class="form-control" id="cat" formControlName="category">
+      <option *ngFor="let c of categories" [value]="c.id">{{c.name}}</option>
+    </select>
+  </div>
+  <br>
+  AVAILABLE IN STORE :<input type="checkbox" formControlName="checks">BIG BAZAR
+  <input type="checkbox" formControlName="checks">D MART
+  <input type="checkbox" formControlName="checks">RELIANCE
+  <input type="checkbox" formControlName="checks">MEGA STORE
+  <div *ngIf="myForm.get('checks').invalid && myForm.controls.checks.touched">
+    <div *ngIf="myForm.controls.checks.errors.required">
+      AVAILABILITY REQUIRED
+    </div>
+  </div>
+<input type="button" value="Add Product" (click)="show()">
+</form>
+

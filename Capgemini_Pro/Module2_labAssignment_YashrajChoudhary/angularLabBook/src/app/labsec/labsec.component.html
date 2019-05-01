@@ -1,0 +1,37 @@
+
+<table border="2">
+  <tr>
+    <th (click)="sortId('empId')">
+      EMPID
+    </th>
+    <th (click)="sortName('empName')">
+      EMPNAME
+    </th>
+    <th (click)="sortSal('empSal')">
+      EMPSAL
+    </th>
+    <th (click)="sortDep('empDep')">
+      EMPDEP
+    </th>
+    <th (click)="sortJoin('empjoiningdate')">
+      EMPJOININGDATE
+    </th>
+  </tr>
+  <tr *ngFor="let r of datalist;">
+    <td>
+      {{r.empId}}
+    </td>
+    <td>
+      {{r.empName}}
+    </td>
+    <td>
+      {{r.empSal}}
+    </td>
+    <td>
+      {{r.empDep}}
+    </td>
+    <td>
+      {{r.empjoiningdate}}
+    </td>
+  </tr>
+</table>

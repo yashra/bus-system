@@ -1,0 +1,3 @@
+	img[title]     { border: 10px solid red; }
+img[width]     { border: 20px solid blue; }
+img[title|="title"] { border: 30px solid yellows; }

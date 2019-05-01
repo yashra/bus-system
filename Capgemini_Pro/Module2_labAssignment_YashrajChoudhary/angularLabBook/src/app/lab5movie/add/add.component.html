@@ -1,0 +1,31 @@
+<p>
+    add-movie works!
+  </p>
+  <form [formGroup]="myForm">
+      MOVIE NAME: <input type="text" formControlName="name"/>
+      <div *ngIf="myForm.controls.name.invalid && myForm.controls.name.touched">
+      <div *ngIf="myForm.controls.name.errors.required">
+        NAME IS REQUIRED
+      </div>
+      <div *ngIf="myForm.controls.name.hasError('pattern')">
+        MOVIE NAME SHOULD BE ALPHANUMERIC
+      </div>
+      </div>
+      <br>
+     GIVE RATING: <input type="text" formControlName="rate"/>
+      <div *ngIf="myForm.controls.rate.invalid && myForm.controls.rate.touched">
+      <div *ngIf="myForm.controls.rate.errors.required">
+        NAME IS REQUIRED
+      </div>
+      </div>
+      <br>
+      <div class="form-group" >
+          <label for="contry">SELECT CATEGORY</label>
+          <select class="form-control" id="cat" formControlName="category">
+            <option *ngFor="let c of categories" [value]="c.id">{{c.name}}</option>
+          </select>
+        </div>
+        <br>
+        <input type="button" value="AddMovie" (click)="show()">
+  
+  </form>

@@ -1,0 +1,43 @@
+
+<h2 align="center">Angular 2 Operations</h2>
+<table align="center">
+  <tr>
+    <td>
+      ID :
+    </td>
+    <td>
+      <input type="text" [(ngModel)]="id">
+    </td>
+</tr>
+<tr>
+    <td>
+      NAME :
+    </td>
+    <td>
+      <input type="text" [(ngModel)]="name">
+    </td>
+</tr>
+<tr>
+    <td>
+      SALARY :
+    </td>
+    <td>
+      <input type="text" [(ngModel)]="salary">
+    </td>
+</tr>
+
+<tr>
+    <td>
+      DEPARTMENT :
+    </td>
+    <td>
+      <input type="text" [(ngModel)]="dept">
+    </td>
+</tr>
+<tr>
+  <input type="button" value="ADD EMPLOYEE" (click)="add()"/>
+</tr>
+</table>
+<p>
+  {{id}} {{name}} {{salary}} {{dept}}
+</p>
